@@ -1,10 +1,24 @@
-import pyautogui, time, os, webbrowser
-from os import system, name
+try:
+    import pyautogui, time, os, webbrowser
+    from os import system, name
+    import sys
+    print('All required packages have been found!')
+    time.sleep(1)
+except:
+    try:
+        os.system('pip install pyautogui')
+        print('All packages have been installed!')
+        time.sleep(1)
+    except:
+        print('Cannot Install packages!')
+        exit()
 def clear():
     if os.name == 'nt':
         _ = system('cls')
     else:
         _ = system('clear')
+
+
 clear()
 screenWidth, screenHeight = pyautogui.size()
 #replace all '" in files
@@ -53,7 +67,7 @@ if annoying.upper() == 'Y':
         time.sleep(1)
         print('7. Info')
         time.sleep(1)
-        print('8. Exit/leave mode')
+        print('8. Exit/leave mode')#poggers1337
         time.sleep(1)
 
         i = int(input('Select option: '))
@@ -78,7 +92,7 @@ if annoying.upper() == 'Y':
                 pyautogui.press("enter")
             print('completed!')
         elif i == 2:
-            print('2. Shrek Scripts Selected!')
+            print('2. Shrek Scripts Selected!')#poggers1337
             print(
                 '...........................................................................................................................')
             print('')
@@ -111,7 +125,7 @@ if annoying.upper() == 'Y':
                 print('Completed!')
             elif script_choice_shrek == 2:
                 time.sleep(1)
-                print('Shrek 2 Selected!')
+                print('Shrek 2 Selected!')#poggers1337
                 time.sleep(1)
                 print('Leave this running on a Text chat like discord or skype!')
                 print('You must have the the flashing | otherwise it will put the text in where it has been selected!')
@@ -149,7 +163,7 @@ if annoying.upper() == 'Y':
 
             elif script_choice_shrek == 4:
                 time.sleep(1)
-                print('Shrek 4 Selected!')
+                print('Shrek 4 Selected!')#poggers1337
                 time.sleep(1)
                 print('Shrek 4 has no public script, returning!')
             else:
@@ -188,7 +202,7 @@ if annoying.upper() == 'Y':
                     time.sleep(.1)
                     pyautogui.press("enter")
                 print('Completed!')
-        elif i == 4:
+        elif i == 4:#poggers1337
             print('4. Song scripts selected!')
             print(
                 '...........................................................................................................................')
@@ -246,7 +260,7 @@ if annoying.upper() == 'Y':
                 for word in f:
                     pyautogui.press("shift" + "enter")
                     pyautogui.typewrite(word)
-                    pyautogui.typewrite(' ')
+                    pyautogui.typewrite(' ')#poggers1337
                     pyautogui.typewrite(annoy)
                     time.sleep(1)
                     pyautogui.press("enter")
@@ -286,7 +300,7 @@ if annoying.upper() == 'Y':
                 time.sleep(5)
                 for _ in range(repeat_times):
                     pyautogui.press("shift" + "enter")
-                    pyautogui.typewrite(message)
+                    pyautogui.typewrite(message)#poggers1337
                     pyautogui.typewrite(' ')
                     pyautogui.typewrite(annoy)
                     time.sleep(0.1)
@@ -339,7 +353,7 @@ if annoying.upper() == 'Y':
             time.sleep(1)
             print('Built by sɹǝƃƃod#5183')
             time.sleep(1)
-            print('Copyright 2020 sɹǝƃƃod#5183/poggers1337')
+            print('Copyright 2020 sɹǝƃƃod#5183/poggers1337')#poggers1337
             print(
                 'Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:')
             print(
@@ -349,7 +363,7 @@ if annoying.upper() == 'Y':
             time.sleep(5)
             discord_server = input('Would you like to join my discord server for more software? Y/N ')
             if discord_server.upper() == 'Y':
-                webbrowser.open_new(url='https://discord.gg/FuBjvyR', new=1)
+                webbrowser.open_new(url='https://discord.gg/FuBjvyR')
             support = input('Would you like to support me, This is open source and I dont get anything off it! Y/N ')
             if support.upper() == 'Y':
                 webbrowser.open(url='paypal.me/james1collum', new=1)
@@ -364,7 +378,7 @@ if annoying.upper() == 'Y':
                 print('Exitting')
                 time.sleep(1)
                 exit()
-            else:
+            else:#poggers1337
                 print('Invalid answer!')
 while True:
     clear()
@@ -380,7 +394,7 @@ while True:
     time.sleep(1)
     print('3. Wiki pages!')
     time.sleep(1)
-    print('4. Song Scripts')
+    print('4. Song Scripts')#poggers1337
     time.sleep(1)
     print('5. Inputted Text Repeated')
     time.sleep(1)
@@ -396,7 +410,7 @@ while True:
         print('')
         print('Leave this running on a Text chat like discord or skype!')
         print('You must have the the flashing | otherwise it will put the text in where it has been selected!')
-        time.sleep(1)
+        time.sleep(1)#poggers1337
         print('')
         print('5 seconds before start!')
         time.sleep(5)
@@ -412,7 +426,7 @@ while True:
         print(
             '...........................................................................................................................')
         print('')
-        print('1. Shrek 1')
+        print('1. Shrek 1')#poggers1337
         time.sleep(1)
         print('2. Shrek 2')
         time.sleep(1)
@@ -428,7 +442,7 @@ while True:
             print('Leave this running on a Text chat like discord or skype!')
             print('You must have the the flashing | otherwise it will put the text in where it has been selected!')
             time.sleep(1)
-            print('')
+            print('')#poggers1337
             print('5 seconds before start!')
             time.sleep(5)
             f = open("Scripts/Shrek/shrek_1.txt", 'r')
@@ -449,7 +463,7 @@ while True:
             time.sleep(5)
             f = open("Scripts/Shrek/shrek_2.txt", 'r')
             for word in f:
-                pyautogui.typewrite(word)
+                pyautogui.typewrite(word)#poggers1337
                 time.sleep(.1)
                 pyautogui.press("enter")
             print('Completed!')
@@ -467,7 +481,7 @@ while True:
             f = open("Scripts/Shrek/shrek_3.txt", 'r')
             for word in f:
                 pyautogui.typewrite(word)
-                time.sleep(.1)
+                time.sleep(.1)#poggers1337
                 pyautogui.press("enter")
             print('Completed!')
 
@@ -483,7 +497,7 @@ while True:
         print(
             '...........................................................................................................................')
         print('')
-        time.sleep(1)
+        time.sleep(1)#poggers1337
         print("These Wikipedia Scripts are the Base of all of them and more will be added!")
         time.sleep(1)
         print('DM me if you want to add more. Go to info for contacts!')
@@ -495,6 +509,22 @@ while True:
         time.sleep(1)
         wiki_selection = int(input('Select Option: '))
         if wiki_selection == 1:
+            print('Wikipedia Selected!')
+            time.sleep(1)
+            print('Leave this running on a Text chat like discord or skype!')
+            print('You must have the the flashing | otherwise it will put the text in where it has been selected!')
+            time.sleep(1)#poggers1337
+            print('')
+            print('5 seconds before start!')
+            time.sleep(5)
+            f = open("Scripts/Wiki/Wikipedia.txt", 'r', encoding="utf8")
+            for word in f:
+                pyautogui.press("shift"+"enter")
+                pyautogui.typewrite(word)
+                time.sleep(1)
+                pyautogui.press("enter")
+            print('Completed!')
+        elif wiki_selection == 2:
             print('Cheese Selected!')
             time.sleep(1)
             print('Leave this running on a Text chat like discord or skype!')
@@ -503,11 +533,11 @@ while True:
             print('')
             print('5 seconds before start!')
             time.sleep(5)
-            f = open("Scripts/Wiki/Wikipedia.txt", 'r', encoding="utf8")
-            for word in f:
-                pyautogui.press("shift"+"enter")
+            f = open("Scripts/Wiki/cheese.txt", 'r', encoding="utf8")
+            for word in f:#poggers1337
+                pyautogui.press("shift" + "enter")
                 pyautogui.typewrite(word)
-                time.sleep(.1)
+                time.sleep(1)
                 pyautogui.press("enter")
             print('Completed!')
     elif i == 4:
@@ -520,7 +550,7 @@ while True:
         time.sleep(1)
         print('DM me if you want to add more. Go to info for contacts!')
         print('Or you could make a push on Github!')
-        time.sleep(1)
+        time.sleep(1)#poggers1337
         print('1. Rick Roll')
         time.sleep(1)
         print('2. Dat Boi Sus')
@@ -539,7 +569,7 @@ while True:
             for word in f:
                 pyautogui.press("shift" + "enter")
                 pyautogui.typewrite(word)
-                time.sleep(1)
+                time.sleep(1)#poggers1337
                 pyautogui.press("enter")
 
             print('Completed!')
@@ -559,7 +589,7 @@ while True:
             print('3. Wap Selected')
             time.sleep(1)
             print('Starting in 5 seconds')
-            time.sleep(5)
+            time.sleep(5)#poggers1337
             f = open("Scripts/songs/wap.txt", 'r', encoding="utf8")
             for word in f:
                 pyautogui.press("shift" + "enter")
@@ -578,7 +608,7 @@ while True:
                 pyautogui.typewrite(word)
                 time.sleep(1)
                 pyautogui.press("enter")
-
+#poggers1337
         else:
             print('Invaild option!')
     elif i == 5:
@@ -596,7 +626,7 @@ while True:
             if repeat_times <= 1:
                 print('Invalid answer, It has to be a whole number!')
             time.sleep(1)
-            message = input('Message: ')
+            message = input('Message: ')#poggers1337
             time.sleep(5)
             for _ in range(repeat_times):
                 pyautogui.press("shift" + "enter")
@@ -617,7 +647,7 @@ while True:
         message = input('Message: ')
         time.sleep(5
                    )
-        for _ in range(repeat_times):
+        for _ in range(repeat_times):#poggers1337
             pyautogui.press("shift" + "enter")
             pyautogui.typewrite(message)
             time.sleep(wait_before_r)
@@ -637,10 +667,10 @@ while True:
         time.sleep(5)
         discord_server = input('Would you like to join my discord server for more software? Y/N ')
         if discord_server.upper() == 'Y':
-            webbrowser.open_new(url= 'https://discord.gg/FuBjvyR', new = 1)
+            webbrowser.open_new(url= 'https://discord.gg/FuBjvyR')
         support = input('Would you like to support me, This is open source and I dont get anything off it! Y/N ')
         if support.upper() == 'Y':
-            webbrowser.open(url='paypal.me/james1collum', new = 1)
+            webbrowser.open(url='paypal.me/james1collum')#poggers1337
     elif i == 7:
         print('End')
         break
@@ -650,3 +680,4 @@ while True:
 
 
 
+#poggers1337
